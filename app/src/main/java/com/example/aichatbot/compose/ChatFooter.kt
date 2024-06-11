@@ -39,11 +39,11 @@ fun ChatFooter(OnClick: (text: String) -> Unit) {
         horizontalArrangement = Arrangement.Center,
         modifier = Modifier
             .fillMaxWidth()
-            .background(Color.LightGray)
+            .background(Color.Transparent)
             .padding(10.dp)
     ) {
 
-        TextField(
+        OutlinedTextField(
             value = inputText, onValueChange = { inputText = it },
             placeholder = { Text(text = "Enter your Question") },
             singleLine = true,
@@ -68,4 +68,3 @@ fun ChatFooter(OnClick: (text: String) -> Unit) {
     }
 
 }
-

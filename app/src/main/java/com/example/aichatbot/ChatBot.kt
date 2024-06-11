@@ -31,13 +31,13 @@ fun ChatBot(
                 Text(text = "No Chat Available")
             } else
                 ChatList(list = viewModel.list)
-            }
+        }
 
 
-            ChatFooter {
-                if (it.isNotEmpty()) {
-                    viewModel.sendMessage(it)
-                }
+        ChatFooter {
+            if (it.isNotEmpty()) {
+                viewModel.sendMessage(it)
             }
         }
     }
+}
